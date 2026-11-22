@@ -455,13 +455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: 3469654091177136315, guid: d60fc36d34c46dd478fc91cb9f829e84, type: 2}
+  m_Graph: {fileID: 9209484898413065143, guid: 98b8db6cafe58734cb562d73842f1311, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2086970060397347069
-  - rid: 4640647416121656255
-  - rid: 4640647416121656256
-  - rid: 4640647416121656257
-  - rid: 4640647572786774196
   m_OriginalGraph: {fileID: 3469654091177136315, guid: 89c96fab2f768e84a87c79a5072190bc, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -476,38 +472,6 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 8342842781429382401}
-    - rid: 4640647416121656255
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 12807423354733878646
-          m_Value1: 4476667667771072566
-        Name: CanonFireCooldown
-        m_Value: 3
-    - rid: 4640647416121656256
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 12603137370962598125
-          m_Value1: 12052270035908500660
-        Name: RotationSpeed
-        m_Value: 0.5
-    - rid: 4640647416121656257
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4922988516272835397
-          m_Value1: 6282508716093870089
-        Name: MaxAttackRange
-        m_Value: 20
-    - rid: 4640647572786774196
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 786982178296822164
-          m_Value1: 17789511518891729639
-        Name: CanonAccuracy
-        m_Value: 0.1
 --- !u!114 &8977832741363433904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,11 +525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e46d2a47b759fd428bb330b2f02056e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioHandler
-  audioSources:
-  - key: 1
-    value: {fileID: 3778223828672742444}
-  - key: 0
-    value: {fileID: 1574674630418926108}
   audioClips:
   - key: 1
     value:

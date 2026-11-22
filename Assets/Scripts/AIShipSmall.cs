@@ -15,15 +15,17 @@ public class AIShipSmall : AIShipBase, IDamagable
         agent = GetComponent<NavMeshAgent>();
         agentGraph = GetComponent<BehaviorGraphAgent>();
         blackboard = agentGraph.BlackboardReference.Blackboard;
+        
         audioHandler = GetComponent<AudioHandler>();
     }
 
     void Start()
     {
         GetComponent<HPHandler>().OnDie += OnDie;
-
+        agentGraph.SetVariableValue<ShipMovementHandler>("Player", FindAnyObjectByType<ShipMovementHandler>());
         agentGraph.Init();
         agentGraph.GetVariable<float>("DetectionRange", out BlackboardVariable<float> detectionRadiusVar);
+
         detectionRadius = detectionRadiusVar;
     }
 

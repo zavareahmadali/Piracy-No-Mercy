@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.Scripting.LifecycleManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,6 +13,7 @@ public class GameManagerHandler : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
     }
     void Start()
     {
@@ -52,6 +54,7 @@ public class GameManagerHandler : MonoBehaviour
     public static void QuitGame()
     {
         Application.Quit();
+        
     }
 
 }

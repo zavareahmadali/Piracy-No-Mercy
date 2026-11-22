@@ -362,13 +362,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: 3469654091177136315, guid: 89c96fab2f768e84a87c79a5072190bc, type: 2}
+  m_Graph: {fileID: 9209484898413065143, guid: 913854b4660f4b84eb5c58f2e78d0141, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2086970060397347069
-  - rid: 4640647403654611696
-  - rid: 4640647416121655563
-  - rid: 4640647416121656077
-  - rid: 4640647572786774500
+  - rid: 4640647664780706585
+  - rid: 4640647664780706586
+  - rid: 4640647664780706587
+  - rid: 4640647664780706588
+  - rid: 4640647664780706589
   m_OriginalGraph: {fileID: -4465404608350346728, guid: 5d9873866b64db14f8d81e5331f6762a, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -383,38 +384,46 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 8342842781429382401}
-    - rid: 4640647403654611696
+    - rid: 4640647664780706585
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
-          m_Value0: 12603137370962598125
-          m_Value1: 12052270035908500660
-        Name: RotationSpeed
-        m_Value: 3
-    - rid: 4640647416121655563
-      type: {class: 'BlackboardVariable`1[[States, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 10476442127970935587
-          m_Value1: 188867586350025869
-        Name: State
-        m_Value: 0
-    - rid: 4640647416121656077
+          m_Value0: 4117129437885561398
+          m_Value1: 2107869107593864493
+        Name: MinePlantCooldown
+        m_Value: 5
+    - rid: 4640647664780706586
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
-          m_Value0: 4922988516272835397
-          m_Value1: 6282508716093870089
+          m_Value0: 2275752473635766912
+          m_Value1: 1854267447655730752
         Name: MaxAttackRange
         m_Value: 45
-    - rid: 4640647572786774500
+    - rid: 4640647664780706587
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
-          m_Value0: 8001260737339618926
-          m_Value1: 4326526259272848328
+          m_Value0: 16182730821127488833
+          m_Value1: 11157216339031568715
+        Name: RotationSpeed
+        m_Value: 3
+    - rid: 4640647664780706588
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 7634669699091394896
+          m_Value1: 14601354722170447929
         Name: CanonAccuracy
         m_Value: 0.99
+    - rid: 4640647664780706589
+      type: {class: 'BlackboardVariable`1[[ShipMovementHandler, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2339288052300318807
+          m_Value1: 11268498989535451635
+        Name: Player
+        m_Value: {fileID: 0}
 --- !u!114 &8977832741363433904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,11 +477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e46d2a47b759fd428bb330b2f02056e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioHandler
-  audioSources:
-  - key: 1
-    value: {fileID: 3778223828672742444}
-  - key: 0
-    value: {fileID: 1574674630418926108}
   audioClips:
   - key: 1
     value:
