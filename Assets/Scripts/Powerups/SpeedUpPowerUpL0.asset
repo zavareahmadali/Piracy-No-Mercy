@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35b07b3cc571304fb7420e73e44ac23, type: 3}
+  m_Name: SpeedUpPowerUpL0
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedUpPowerUp
+  powerUpType: 2
+  title: SpeedUp
+  icon: {fileID: 21300000, guid: 8b6b448765cd70a4790826f296ff571d, type: 3}
+  level: 0
+  description: Speed Up by 10%.
+  speed: 17
+  rotationSpeed: 2
+  minimumCollisionSpeed: 6
+  maxCollisionSpeed: 43
