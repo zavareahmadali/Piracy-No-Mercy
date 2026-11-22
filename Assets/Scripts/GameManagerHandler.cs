@@ -1,34 +1,57 @@
 using Unity.Scripting.LifecycleManagement;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManagerHandler : MonoBehaviour
 {
+    public static GameManagerHandler instance;
     public static bool isGamePaused = false;
+    public InputActionReference action;
+    public GameObject PauseMenu;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
-        //XPHandler.OnLevelUpdated += HandleLevelUpdated;
+        action.action.performed += HandleInput;
     }
 
+    public void HandleInput(InputAction.CallbackContext ctx)
+    {
+        if (isGamePaused)
+        {
+            ResumeGame();
+        }
+        else
+            PauseGame();
+    }
     private void OnDisable()
     {
-        //XPHandler.OnLevelUpdated -= HandleLevelUpdated;
+        action.action.performed -= HandleInput;
     }
     void HandleLevelUpdated(int newLevel)
     {
-        // Handle level updated logic here
         isGamePaused = true;
     }
 
     public static void PauseGame()
     {
         isGamePaused = true;
-        Time.timeScale = 0f; // Pause the game by setting time scale to 0
+        Time.timeScale = 0f;
+        instance.PauseMenu.SetActive(true);
     }
-
     public static void ResumeGame()
     {
         isGamePaused = false;
-        Time.timeScale = 1f; // Resume the game by setting time scale to 1
+        Time.timeScale = 1f;
+        instance.PauseMenu.SetActive(false);
     }
+
+    public static void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
