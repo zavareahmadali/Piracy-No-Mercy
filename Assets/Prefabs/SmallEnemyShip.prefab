@@ -434,10 +434,10 @@ NavMeshAgent:
   m_Speed: 5
   m_Acceleration: 2
   avoidancePriority: 50
-  m_AngularSpeed: 40
-  m_StoppingDistance: 10
+  m_AngularSpeed: 65
+  m_StoppingDistance: 15
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: -1
@@ -458,6 +458,9 @@ MonoBehaviour:
   m_Graph: {fileID: 9209484898413065143, guid: 98b8db6cafe58734cb562d73842f1311, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2086970060397347069
+  - rid: 4640647685635047515
+  - rid: 4640647685635047516
+  - rid: 4640647685635047517
   m_OriginalGraph: {fileID: 3469654091177136315, guid: 89c96fab2f768e84a87c79a5072190bc, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -472,6 +475,30 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 8342842781429382401}
+    - rid: 4640647685635047515
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 3809224590183444780
+          m_Value1: 5111449483397417103
+        Name: CanonFireCooldown
+        m_Value: 2
+    - rid: 4640647685635047516
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2275752473635766912
+          m_Value1: 1854267447655730752
+        Name: MaxAttackRange
+        m_Value: 15
+    - rid: 4640647685635047517
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 16182730821127488833
+          m_Value1: 11157216339031568715
+        Name: RSpeed
+        m_Value: 10
 --- !u!114 &8977832741363433904
 MonoBehaviour:
   m_ObjectHideFlags: 0

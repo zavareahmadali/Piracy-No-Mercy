@@ -15,6 +15,7 @@ public partial class StateSetterAction : Action
     [SerializeReference] public BlackboardVariable<float> MaxDetectionRange;
     protected override Status OnStart()
     {
+        Player.Value = GameObject.FindAnyObjectByType<ShipMovementHandler>();
         return Status.Running;
 
     }

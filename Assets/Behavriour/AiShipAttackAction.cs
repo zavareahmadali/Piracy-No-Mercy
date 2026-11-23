@@ -12,19 +12,19 @@ public partial class AiShipAttackAction : Action
     [SerializeReference] public BlackboardVariable<ShipMovementHandler> Player;
     [SerializeReference] public BlackboardVariable<float> RotSpeed;
     [SerializeReference] public BlackboardVariable<float> CanonAccuracy;
+    private Rigidbody agentRB;
     protected override Status OnStart()
     {
-        return Status.Running;
+        Agent.Value.FireAt(Player.Value.transform.position);
+        return Status.Success;
     }
 
     protected override Status OnUpdate()
     {
-        Agent.Value.transform.rotation = Quaternion.Lerp(Agent.Value.transform.rotation, Quaternion.LookRotation((Player.Value.transform.position - Agent.Value.transform.position).normalized, Vector2.up), Time.deltaTime * RotSpeed.Value);
-        if (Mathf.Abs(Vector3.Dot(Agent.Value.transform.forward, (Agent.Value.transform.position - Player.Value.transform.position).normalized)) < CanonAccuracy.Value)
-            return Status.Running;
+            return Status.Success;
 
-        Agent.Value.FireAt(Player.Value.transform.position);
-        return Status.Success;
+        
+        
     }
 
     protected override void OnEnd()

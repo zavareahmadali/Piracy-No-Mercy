@@ -90,10 +90,10 @@ public class XPHandler : MonoBehaviour
 
 public class XPConstants
 {
-    public const int XP_PER_ENEMY_DAMAGED = 2;
-    public const int XP_PER_ENEMY_KILLED = 3;
-    public const int XP_PER_DAMAGE_TAKEN = 1;
-    public const int XP_PER_BOSS = 5;
+    public const int XP_PER_ENEMY_DAMAGED = 1;
+    public const int XP_PER_ENEMY_KILLED = 2;
+    public const int XP_PER_DAMAGE_TAKEN = 0;
+    public const int XP_PER_BOSS = 15;
 }
 
 [Serializable]
