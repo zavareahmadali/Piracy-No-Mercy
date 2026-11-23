@@ -12,6 +12,7 @@ public class AIShipSmall : AIShipBase, IDamagable
     public float spreadRadius = 0.5f;
     private void Awake()
     {
+        
         agent = GetComponent<NavMeshAgent>();
         agentGraph = GetComponent<BehaviorGraphAgent>();
         blackboard = agentGraph.BlackboardReference.Blackboard;

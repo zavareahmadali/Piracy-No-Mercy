@@ -141,7 +141,7 @@ MonoBehaviour:
   - rid: 4640647664780706114
   - rid: 4640647664780706367
   - rid: 4640647664780706446
-  m_VersionTimestamp: 639309808799854489
+  m_VersionTimestamp: 639310338675877662
   m_CommandBuffer:
     m_Commands: []
   m_RuntimeBlackboardAsset: {fileID: -4976436502894088512}
@@ -155,7 +155,7 @@ MonoBehaviour:
           m_Value0: 1
           m_Value1: 0
         Name: Self
-        IsExposed: 1
+        IsExposed: 0
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4640647664780705824
@@ -165,7 +165,7 @@ MonoBehaviour:
           m_Value0: 6551591028209748302
           m_Value1: 2425498311038714747
         Name: State
-        IsExposed: 1
+        IsExposed: 0
         m_IsShared: 0
         m_Value: 0
     - rid: 4640647664780705844
@@ -175,7 +175,7 @@ MonoBehaviour:
           m_Value0: 2339288052300318807
           m_Value1: 11268498989535451635
         Name: Player
-        IsExposed: 1
+        IsExposed: 0
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4640647664780705862

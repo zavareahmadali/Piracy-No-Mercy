@@ -14,7 +14,6 @@ public partial class AiShipAttackAction : Action
     [SerializeReference] public BlackboardVariable<float> CanonAccuracy;
     protected override Status OnStart()
     {
-        Player.Value = GameObject.FindAnyObjectByType<ShipMovementHandler>();
         return Status.Running;
     }
 
