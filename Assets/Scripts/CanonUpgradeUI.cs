@@ -67,6 +67,9 @@ public class CanonUpgradeUI : MonoBehaviour
     
     private void TogglePanel(bool isOpening)
     {
+        if (GameManagerHandler.GetIsAnyOverlayScreenActive())
+            return;
+
         MiniUpgradeUI.SetActive(!isOpening);
         CanonUpgradeAnimator.SetBool(SHOWCANONUIPARAM, isOpening);
         if (isOpening)

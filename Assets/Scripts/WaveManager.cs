@@ -19,6 +19,7 @@ public class WaveManager : MonoBehaviour
     private float elapsedTime = 0f;
     private float timer = 0f;
     public static Action<int, WaveState> OnWaveUpdated;
+    public static Action OnAllWavesFinished;
     public GameObject waveDirectionIndicator;
     public float changeRegionDistanceThreshold;
     private ShipMovementHandler playerShip;
@@ -53,6 +54,7 @@ public class WaveManager : MonoBehaviour
             {
                 OnWaveUpdated?.Invoke((int)waveID.x, WaveState.Finished);
                 audioHandler.PlaySFX(SFXType.Brush);
+                OnAllWavesFinished?.Invoke();
                 yield return null;
 
             }
